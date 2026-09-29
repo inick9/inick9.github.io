@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>inick9 — Projects & Experiments</title>
+  <meta name="description"
+        content="Projects, experiments and web tools by inick9.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0a0a0a;
+      --card: #111111;
+      --border: #252525;
+      --text: #f5f5f5;
+      --muted: #929292;
+      --accent: #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    nav {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .github {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .github:hover {
+      color: white;
+    }
+
+    .hero {
+      padding: 110px 0 90px;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: .98;
+      letter-spacing: -0.06em;
+      margin-bottom: 30px;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 20px;
+      max-width: 650px;
+    }
+
+    .section {
+      padding: 50px 0 100px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .project {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: .2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      border-color: #444;
+    }
+
+    .project h2 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .project-link {
+      margin-top: 30px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .arrow {
+      margin-left: 5px;
+    }
+
+    .about {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        padding: 75px 0 60px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .intro {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav>
+      <a class="logo" href="/">inick9</a>
+
+      <a
+        class="github"
+        href="https://github.com/inick9"
+        target="_blank"
+        rel="noopener noreferrer">
+        GitHub ↗
+      </a>
+    </nav>
+
+    <main>
+
+      <section class="hero">
+        <div class="eyebrow">Personal website · GitHub Pages</div>
+
+        <h1>
+          Building things<br>
+          on the web.
+        </h1>
+
+        <p class="intro">
+          A small home for projects, experiments, tools and things
+          built by <strong>inick9</strong>.
+        </p>
+      </section>
+
+
+      <section class="section">
+
+        <div class="section-title">
+          Selected project
+        </div>
+
+        <div class="projects">
+
+          <a
+            class="project"
+            href="/NEFT-RTGS-BANAS/">
+
+            <div>
+              <h2>NEFT / RTGS / IMPS</h2>
+
+              <p>
+                A web-based transaction request form for
+                NEFT, RTGS and IMPS requests, including
+                beneficiary details and printable output.
+              </p>
+            </div>
+
+            <div class="project-link">
+              Open project <span class="arrow">→</span>
+            </div>
+
+          </a>
+
+
+          <a
+            class="project"
+            href="https://github.com/inick9"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <div>
+              <h2>GitHub</h2>
+
+              <p>
+                Explore repositories, experiments and
+                other public work.
+              </p>
+            </div>
+
+            <div class="project-link">
+              View GitHub <span class="arrow">→</span>
+            </div>
+
+          </a>
+
+        </div>
+
+      </section>
+
+
+      <section class="section">
+
+        <div class="section-title">
+          About
+        </div>
+
+        <p class="about">
+          This site is a central place for projects and experiments
+          published through GitHub Pages. More projects will appear
+          here as they are built.
+        </p>
+
+      </section>
+
+    </main>
+
+
+    <footer>
+      © 2026 inick9 · Built with HTML & CSS · GitHub Pages
+    </footer>
+
+  </div>
+
+</body>
+</html>
